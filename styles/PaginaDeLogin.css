@@ -191,3 +191,70 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Estilos padrão para telas grandes, como desktops e notebooks */
+@media (min-width: 1024px) {
+    .container-login {
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .container-login img {
+        max-width: 50%; 
+    }
+
+    .container-login form {
+        margin: 0 0 0 2em; 
+        max-width: 400px; 
+        width: 100%;
+    }
+
+    .form__campo-digitacao {
+        max-width: 100%; 
+    }
+}
+
+/* Estilos para telas médias, como tablets */
+@media (max-width: 1023px) {
+    .container-login {
+        flex-direction: column;
+    }
+
+    .container-login img {
+        max-width: 100%; 
+        margin-bottom: 1em; 
+    }
+
+    .container-login form {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .form__campo-digitacao {
+        max-width: 100%; 
+    }
+}
+
+/* Estilos para telas pequenas, como smartphones */
+@media (max-width: 767px) {
+    .container-login {
+        padding: 1em; 
+    }
+
+    .container-login img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 1em; 
+        object-fit: cover; 
+    }
+    
+
+    .container-login form {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .form__campo-digitacao {
+        max-width: 100%; 
+    }
+}
